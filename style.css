@@ -142,6 +142,8 @@ body {
     background-color: black;
 }
 
+
+
 @media screen and (max-width:375px) {
     * {
         font-family: 'Overpass', sans-serif;
@@ -156,12 +158,14 @@ body {
         height: 55%;
         border-radius: 3vw;
         padding: 4vw;
-        z-index: 1;
+        margin: 1rem;
+
     }
 
     .container img {
-        width: 7vw;
-        padding: 4vw;
+        width: 4vw;
+        padding: 2vw;
+        margin-bottom: 1rem;
         border-radius: 50%;
         background-color: hsl(213, 19%, 18%);
     }
@@ -170,12 +174,14 @@ body {
         color: hsl(0, 0%, 100%);
         font-weight: 700;
         font-size: x-large;
+        /*margin-bottom: 1rem;*/
     }
 
     .container p:nth-child(3) {
         color: hsl(217, 12%, 63%);
         font-weight: 400;
         line-height: 1.4rem;
+        font-size: small;
     }
 
     .ratebtn-container {
@@ -190,12 +196,14 @@ body {
         border: none;
         outline: none;
         border-radius: 50%;
-        font-size: large;
-        padding: 4vw;
+        font-size: medium;
+        /*padding: 2vw;*/
         background-color: hsl(213, 19%, 18%);
         color: hsl(217, 12%, 63%);
         cursor: pointer;
         font-weight: 400;
+        width: 40px;
+        height: 40px;
     }
 
     .ratebtn-container button:focus {
@@ -219,10 +227,185 @@ body {
         text-transform: uppercase;
         font-size: larger;
         cursor: pointer;
+        margin-top: 1rem;
     }
 
     .container .btn-submit:hover {
         background-color: white;
         color: hsl(25, 97%, 53%);
+    }
+
+    /* second page */
+    .container-ty {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: hsl(216, 12%, 8%);
+        width: 90%;
+        height: 55%;
+        border-radius: 3vw;
+        padding: 7vw;
+        margin: 1rem;
+        display: none;
+
+    }
+
+    .container-ty img {
+        width: 35vw;
+    }
+
+    .container-ty p:nth-child(2) {
+        background-color: hsl(213, 19%, 18%);
+        color: hsl(25, 97%, 53%);
+        padding: 0.5rem;
+        font-size: small;
+        border-radius: 1rem;
+    }
+
+    .container-ty p:nth-child(3) {
+        color: white;
+        font-size: x-large;
+        font-weight: 800;
+    }
+
+    .container-ty p:nth-child(4) {
+        color: hsl(217, 12%, 63%);
+        font-size: small;
+        line-height: 1rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    * {
+        font-family: 'Overpass', sans-serif;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: hsl(216, 12%, 8%);
+        width: 30%;
+        height: 55%;
+        border-radius: 3vw;
+        padding: 4vw;
+        margin: 1rem;
+
+    }
+
+    .container img {
+        width: 1.5vw;
+        padding: 1vw;
+        margin-bottom: 1rem;
+        border-radius: 50%;
+        background-color: hsl(213, 19%, 18%);
+    }
+
+    .container p:nth-child(2) {
+        color: hsl(0, 0%, 100%);
+        font-weight: 700;
+        font-size: x-large;
+        /*margin-bottom: 1rem;*/
+    }
+
+    .container p:nth-child(3) {
+        color: hsl(217, 12%, 63%);
+        font-weight: 400;
+        line-height: 1.4rem;
+        font-size: small;
+    }
+
+    .ratebtn-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .ratebtn-container button {
+        border: none;
+        outline: none;
+        border-radius: 50%;
+        font-size: medium;
+        /*padding: 2vw;*/
+        background-color: hsl(213, 19%, 18%);
+        color: hsl(217, 12%, 63%);
+        cursor: pointer;
+        font-weight: 400;
+        width: 40px;
+        height: 40px;
+    }
+
+    .ratebtn-container button:focus {
+        background-color: hsl(217, 12%, 63%);
+        color: white;
+    }
+
+    .ratebtn-container button:hover {
+        background-color: hsl(25, 97%, 53%);
+        color: white;
+    }
+
+    .container .btn-submit {
+        outline: none;
+        border: none;
+        height: 8vh;
+        border-radius: 8vw;
+        color: white;
+        font-weight: 400;
+        background-color: hsl(25, 97%, 53%);
+        text-transform: uppercase;
+        font-size: larger;
+        cursor: pointer;
+        margin-top: 1rem;
+    }
+
+    .container .btn-submit:hover {
+        background-color: white;
+        color: hsl(25, 97%, 53%);
+    }
+
+    /* second page */
+    .container-ty {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: hsl(216, 12%, 8%);
+        width: 90%;
+        height: 55%;
+        border-radius: 3vw;
+        padding: 7vw;
+        margin: 1rem;
+        display: none;
+
+    }
+
+    .container-ty img {
+        width: 35vw;
+    }
+
+    .container-ty p:nth-child(2) {
+        background-color: hsl(213, 19%, 18%);
+        color: hsl(25, 97%, 53%);
+        padding: 0.5rem;
+        font-size: small;
+        border-radius: 1rem;
+    }
+
+    .container-ty p:nth-child(3) {
+        color: white;
+        font-size: x-large;
+        font-weight: 800;
+    }
+
+    .container-ty p:nth-child(4) {
+        color: hsl(217, 12%, 63%);
+        font-size: small;
+        line-height: 1rem;
+        text-align: center;
     }
 }
